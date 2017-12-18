@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Control from '../Control';
 import pressable from '../pressable';
@@ -59,22 +60,22 @@ class Link extends Control {
 }
 
 Link.propTypes = {
-    theme: React.PropTypes.string,
-    size: React.PropTypes.oneOf(['s', 'm', 'l', 'xl']),
-    view: React.PropTypes.oneOf(['minor', 'external']),
-    id: React.PropTypes.string,
-    className: React.PropTypes.string,
-    type: React.PropTypes.string,
-    disabled: React.PropTypes.bool,
-    focused: React.PropTypes.bool,
-    target: React.PropTypes.string,
-    title: React.PropTypes.string,
-    url: React.PropTypes.string,
-    onClick: React.PropTypes.func,
+    theme: PropTypes.string,
+    size: PropTypes.oneOf(['s', 'm', 'l', 'xl']),
+    view: PropTypes.oneOf(['minor', 'external']),
+    id: PropTypes.string,
+    className: PropTypes.string,
+    type: PropTypes.string,
+    disabled: PropTypes.bool,
+    focused: PropTypes.bool,
+    target: PropTypes.string,
+    title: PropTypes.string,
+    url: PropTypes.string,
+    onClick: PropTypes.func,
 };
 
 Link.contextTypes = {
-    theme: React.PropTypes.string,
+    theme: PropTypes.string,
 };
 
 export default pressable(Link);

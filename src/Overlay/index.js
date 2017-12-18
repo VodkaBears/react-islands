@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Component from '../Component';
 import Portal from './Portal';
@@ -179,17 +180,17 @@ class Overlay extends Component {
 }
 
 Overlay.childContextTypes = Overlay.contextTypes = {
-    zIndexGroupLevel: React.PropTypes.number,
-    isParentLayerVisible: React.PropTypes.func,
-    preventParentLayerClickOutside: React.PropTypes.func,
+    zIndexGroupLevel: PropTypes.number,
+    isParentLayerVisible: PropTypes.func,
+    preventParentLayerClickOutside: PropTypes.func,
 };
 
 Overlay.propsTypes = {
-    visible: React.PropTypes.bool.isRequired,
-    zIndexGroupLevel: React.PropTypes.number,
-    onClick: React.PropTypes.func,
-    onRequestHide: React.PropTypes.func,
-    onOrderChange: React.PropTypes.func,
+    visible: PropTypes.bool.isRequired,
+    zIndexGroupLevel: PropTypes.number,
+    onClick: PropTypes.func,
+    onRequestHide: PropTypes.func,
+    onOrderChange: PropTypes.func,
 };
 
 Overlay.defaultProps = {

@@ -1,6 +1,7 @@
 import throttle from 'lodash/throttle';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 import Component from '../Component';
 import Overlay from '../Overlay';
 
@@ -410,19 +411,19 @@ function getScrollParents(el) {
 }
 
 Popup.propsTypes = {
-    theme: React.PropTypes.string,
-    size: React.PropTypes.string,
-    visible: React.PropTypes.bool.isRequired,
-    anchor: React.PropTypes.oneOfType([
-        React.PropTypes.element,
-        React.PropTypes.shape({ left: React.PropTypes.number, top: React.PropTypes.number }),
-        React.PropTypes.func,
+    theme: PropTypes.string,
+    size: PropTypes.string,
+    visible: PropTypes.bool.isRequired,
+    anchor: PropTypes.oneOfType([
+        PropTypes.element,
+        PropTypes.shape({ left: PropTypes.number, top: PropTypes.number }),
+        PropTypes.func,
     ]),
-    directions: React.PropTypes.oneOf(DEFAULT_DIRECTIONS),
-    mainOffset: React.PropTypes.number,
-    secondaryOffset: React.PropTypes.number,
-    onRequestHide: React.PropTypes.func,
-    onLayout: React.PropTypes.func,
+    directions: PropTypes.oneOf(DEFAULT_DIRECTIONS),
+    mainOffset: PropTypes.number,
+    secondaryOffset: PropTypes.number,
+    onRequestHide: PropTypes.func,
+    onLayout: PropTypes.func,
 };
 
 Popup.defaultProps = {
@@ -435,7 +436,7 @@ Popup.defaultProps = {
 };
 
 Popup.contextTypes = {
-    theme: React.PropTypes.string,
+    theme: PropTypes.string,
 };
 
 export default Popup;

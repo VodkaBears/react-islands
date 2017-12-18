@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Component from '../../Component';
 
 class MenuItem extends Component {
@@ -80,18 +81,18 @@ class MenuItem extends Component {
 }
 
 MenuItem.contextTypes = {
-    theme: React.PropTypes.string,
+    theme: PropTypes.string,
 };
 
 MenuItem.propTypes = {
-    index: React.PropTypes.number,
-    theme: React.PropTypes.string,
-    size: React.PropTypes.string,
-    type: React.PropTypes.string,
-    disabled: React.PropTypes.bool,
-    checked: React.PropTypes.bool,
-    onClick: React.PropTypes.func,
-    onHover: React.PropTypes.func,
+    index: PropTypes.number,
+    theme: PropTypes.string,
+    size: PropTypes.string,
+    type: PropTypes.string,
+    disabled: PropTypes.bool,
+    checked: PropTypes.bool,
+    onClick: PropTypes.func,
+    onHover: PropTypes.func,
 };
 
 export default MenuItem;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Control from '../Control';
 import Button from '../Button';
 
@@ -117,16 +118,16 @@ class Radio extends Control {
 }
 
 Radio.propTypes = {
-    theme: React.PropTypes.string,
-    size: React.PropTypes.oneOf(['s', 'm', 'l', 'xl']),
-    id: React.PropTypes.string,
-    className: React.PropTypes.string,
-    type: React.PropTypes.string,
-    disabled: React.PropTypes.bool,
-    checked: React.PropTypes.bool,
-    value: React.PropTypes.any,
-    onClick: React.PropTypes.func,
-    onCheck: React.PropTypes.func,
+    theme: PropTypes.string,
+    size: PropTypes.oneOf(['s', 'm', 'l', 'xl']),
+    id: PropTypes.string,
+    className: PropTypes.string,
+    type: PropTypes.string,
+    disabled: PropTypes.bool,
+    checked: PropTypes.bool,
+    value: PropTypes.any,
+    onClick: PropTypes.func,
+    onCheck: PropTypes.func,
 };
 
 Radio.defaultProps = {
@@ -134,7 +135,7 @@ Radio.defaultProps = {
 };
 
 Radio.contextTypes = {
-    theme: React.PropTypes.string,
+    theme: PropTypes.string,
 };
 
 export default Radio;

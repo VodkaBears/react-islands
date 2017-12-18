@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
 const KEY_SPACE = ' ';
 const KEY_ENTER = 'Enter';
@@ -139,10 +139,10 @@ function pressable(BaseComponent) {
 
     PressableComponent.propsTypes = {
         ...BaseComponent.propTypes,
-        disabled: React.PropTypes.bool,
-        onClick: React.PropTypes.func,
-        onKeyDown: React.PropTypes.func,
-        onKeyUp: React.PropTypes.func,
+        disabled: PropTypes.bool,
+        onClick: PropTypes.func,
+        onKeyDown: PropTypes.func,
+        onKeyUp: PropTypes.func,
     };
 
     return PressableComponent;

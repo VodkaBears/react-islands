@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import warning from 'warning';
 import Component from '../Component';
 
@@ -133,10 +133,10 @@ class Control extends Component {
 }
 
 Control.propTypes = {
-    disabled: React.PropTypes.bool,
-    focused: React.PropTypes.bool,
-    onFocusChange: React.PropTypes.func,
-    onHoverChange: React.PropTypes.func,
+    disabled: PropTypes.bool,
+    focused: PropTypes.bool,
+    onFocusChange: PropTypes.func,
+    onHoverChange: PropTypes.func,
 };
 
 export default Control;

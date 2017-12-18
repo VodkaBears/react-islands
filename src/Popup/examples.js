@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 import Button from '../Button';
 import Link from '../Link';
 import Popup from '../Popup';
@@ -185,7 +186,7 @@ class PopupExampleScroll extends React.Component {
 }
 
 PopupExampleScroll.childContextTypes = {
-    zIndexGroupLevel: React.PropTypes.number,
+    zIndexGroupLevel: PropTypes.number,
 };
 
 class PopupExampleMountVisible extends React.Component {

@@ -1,7 +1,6 @@
 .idea
 .*cache
 build
-components
 node_modules
 src/index.js
 *.swp

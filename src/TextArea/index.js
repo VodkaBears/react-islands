@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Control from '../Control';
 
 class TextArea extends Control {
@@ -62,22 +63,22 @@ class TextArea extends Control {
 }
 
 TextArea.contextTypes = {
-    theme: React.PropTypes.string,
+    theme: PropTypes.string,
 };
 
 TextArea.propTypes = {
-    theme: React.PropTypes.string,
-    size: React.PropTypes.oneOf(['s', 'm', 'l', 'xl']),
-    id: React.PropTypes.string,
-    className: React.PropTypes.string,
-    name: React.PropTypes.string,
-    value: React.PropTypes.string,
-    placeholder: React.PropTypes.string,
-    minLength: React.PropTypes.number,
-    maxLength: React.PropTypes.number,
-    disabled: React.PropTypes.bool,
-    onChange: React.PropTypes.func,
-    onClick: React.PropTypes.func,
+    theme: PropTypes.string,
+    size: PropTypes.oneOf(['s', 'm', 'l', 'xl']),
+    id: PropTypes.string,
+    className: PropTypes.string,
+    name: PropTypes.string,
+    value: PropTypes.string,
+    placeholder: PropTypes.string,
+    minLength: PropTypes.number,
+    maxLength: PropTypes.number,
+    disabled: PropTypes.bool,
+    onChange: PropTypes.func,
+    onClick: PropTypes.func,
 };
 
 TextArea.defaultProps = {

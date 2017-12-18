@@ -1,11 +1,11 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import Component from '../Component';
 
 class Group extends Component {}
 
 Group.propTypes = {
-    disabled: React.PropTypes.bool,
-    title: React.PropTypes.any,
+    disabled: PropTypes.bool,
+    title: PropTypes.any,
 };
 
 export default Group;

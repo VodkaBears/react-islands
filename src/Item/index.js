@@ -1,13 +1,13 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import Component from '../Component';
 
 class Item extends Component {}
 
 Item.propTypes = {
-    disabled: React.PropTypes.bool,
-    value: React.PropTypes.any,
-    checkedText: React.PropTypes.any,
-    onClick: React.PropTypes.func,
+    disabled: PropTypes.bool,
+    value: PropTypes.any,
+    checkedText: PropTypes.any,
+    onClick: PropTypes.func,
 };
 
 export default Item;

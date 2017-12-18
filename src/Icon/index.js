@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Component from '../Component';
 
@@ -32,7 +33,7 @@ class Icon extends Component {
 }
 
 Icon.propTypes = {
-    url: React.PropTypes.string,
+    url: PropTypes.string,
 };
 
 export default Icon;

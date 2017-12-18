@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 import Component from '../Component';
 import Item from '../Item';
 import Group from '../Group';
@@ -542,21 +543,21 @@ class Menu extends Component {
 }
 
 Menu.contextTypes = {
-    theme: React.PropTypes.string,
+    theme: PropTypes.string,
 };
 
 Menu.propTypes = {
-    theme: React.PropTypes.string,
-    size: React.PropTypes.string,
-    mode: React.PropTypes.string,
-    focused: React.PropTypes.bool,
-    disabled: React.PropTypes.bool,
-    minHeight: React.PropTypes.number,
-    maxHeight: React.PropTypes.number,
-    minWidth: React.PropTypes.number,
-    maxWidth: React.PropTypes.number,
-    onChange: React.PropTypes.func,
-    onFocusChange: React.PropTypes.func,
+    theme: PropTypes.string,
+    size: PropTypes.string,
+    mode: PropTypes.string,
+    focused: PropTypes.bool,
+    disabled: PropTypes.bool,
+    minHeight: PropTypes.number,
+    maxHeight: PropTypes.number,
+    minWidth: PropTypes.number,
+    maxWidth: PropTypes.number,
+    onChange: PropTypes.func,
+    onFocusChange: PropTypes.func,
 };
 
 Menu.defaultProps = {

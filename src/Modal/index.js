@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Component from '../Component';
 import Overlay from '../Overlay';
@@ -98,10 +99,10 @@ class Modal extends Component {
 }
 
 Modal.propsTypes = {
-    theme: React.PropTypes.string,
-    size: React.PropTypes.string,
-    visible: React.PropTypes.bool.isRequired,
-    onRequestHide: React.PropTypes.func,
+    theme: PropTypes.string,
+    size: PropTypes.string,
+    visible: PropTypes.bool.isRequired,
+    onRequestHide: PropTypes.func,
 };
 
 Modal.defaultProps = {
@@ -111,7 +112,7 @@ Modal.defaultProps = {
 };
 
 Modal.contextTypes = {
-    theme: React.PropTypes.string,
+    theme: PropTypes.string,
 };
 
 export default Modal;

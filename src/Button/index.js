@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Component from '../Component';
 import Control from '../Control';
@@ -101,17 +102,17 @@ class Button extends Control {
 }
 
 Button.propTypes = {
-    theme: React.PropTypes.string,
-    size: React.PropTypes.oneOf(['s', 'm', 'l', 'xl']),
-    id: React.PropTypes.string,
-    className: React.PropTypes.string,
-    type: React.PropTypes.string,
-    title: React.PropTypes.string,
-    onClick: React.PropTypes.func,
+    theme: PropTypes.string,
+    size: PropTypes.oneOf(['s', 'm', 'l', 'xl']),
+    id: PropTypes.string,
+    className: PropTypes.string,
+    type: PropTypes.string,
+    title: PropTypes.string,
+    onClick: PropTypes.func,
 };
 
 Button.contextTypes = {
-    theme: React.PropTypes.string,
+    theme: PropTypes.string,
 };
 
 export default pressable(Button);

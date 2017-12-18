@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 
 import Component from '../Component';
 import Button from '../Button';
@@ -291,21 +292,21 @@ class Select extends Component {
 }
 
 Select.contextTypes = {
-    theme: React.PropTypes.string,
+    theme: PropTypes.string,
 };
 
 Select.propTypes = {
-    theme: React.PropTypes.string,
-    size: React.PropTypes.string,
-    id: React.PropTypes.string,
-    className: React.PropTypes.string,
-    mode: React.PropTypes.string,
-    name: React.PropTypes.string,
-    value: React.PropTypes.any,
-    placeholder: React.PropTypes.string,
-    disabled: React.PropTypes.bool,
-    maxHeight: React.PropTypes.number,
-    onChange: React.PropTypes.func,
+    theme: PropTypes.string,
+    size: PropTypes.string,
+    id: PropTypes.string,
+    className: PropTypes.string,
+    mode: PropTypes.string,
+    name: PropTypes.string,
+    value: PropTypes.any,
+    placeholder: PropTypes.string,
+    disabled: PropTypes.bool,
+    maxHeight: PropTypes.number,
+    onChange: PropTypes.func,
 };
 
 Select.defaultProps = {

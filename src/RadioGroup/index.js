@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Component from '../Component';
 
 class RadioGroup extends Component {
@@ -64,17 +65,17 @@ class RadioGroup extends Component {
 }
 
 RadioGroup.contextTypes = {
-    theme: React.PropTypes.string,
+    theme: PropTypes.string,
 };
 
 RadioGroup.propTypes = {
-    theme: React.PropTypes.string,
-    size: React.PropTypes.string,
-    type: React.PropTypes.string,
-    name: React.PropTypes.string,
-    value: React.PropTypes.any,
-    disabled: React.PropTypes.bool,
-    onChange: React.PropTypes.func,
+    theme: PropTypes.string,
+    size: PropTypes.string,
+    type: PropTypes.string,
+    name: PropTypes.string,
+    value: PropTypes.any,
+    disabled: PropTypes.bool,
+    onChange: PropTypes.func,
 };
 
 RadioGroup.defaultProps = {

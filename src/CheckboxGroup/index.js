@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Component from '../Component';
 
@@ -72,17 +73,17 @@ class CheckboxGroup extends Component {
 }
 
 CheckboxGroup.contextTypes = {
-    theme: React.PropTypes.string,
+    theme: PropTypes.string,
 };
 
 CheckboxGroup.propTypes = {
-    theme: React.PropTypes.string,
-    size: React.PropTypes.oneOf(['m', 'l', 'xl']),
-    type: React.PropTypes.string,
-    name: React.PropTypes.string,
-    disabled: React.PropTypes.bool,
-    value: React.PropTypes.any,
-    onChange: React.PropTypes.func,
+    theme: PropTypes.string,
+    size: PropTypes.oneOf(['m', 'l', 'xl']),
+    type: PropTypes.string,
+    name: PropTypes.string,
+    disabled: PropTypes.bool,
+    value: PropTypes.any,
+    onChange: PropTypes.func,
 };
 
 CheckboxGroup.defaultProps = {
